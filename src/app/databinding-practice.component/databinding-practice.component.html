@@ -1,0 +1,5 @@
+<p>databinding-practice.component works!</p>
+
+<input [(ngModel)]="username" (click)="onUsernameClick($event)" type="text" >
+<p> username: {{username}}</p>
+<input [disabled]="isUserNameEmpty()" (click)="onClickResetUsername()" type="button" value="Reset">

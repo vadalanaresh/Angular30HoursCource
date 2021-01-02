@@ -1,0 +1,4 @@
+<div *ngFor='let item of [].constructor(100); let i = index' >
+<p [ngClass]= '{even: isEvenNumber(i)}' *ngIf='isEvenNumber(i)'>number {{i}} is Even</p>
+<P [ngStyle]="{'background-color': 'palevioletred'}" *ngIf='isOddNumber(i)'>number {{i}} is Odd</P> 
+</div>
